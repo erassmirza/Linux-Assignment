@@ -1,0 +1,34 @@
+1) create a file using vi or nano random.txt in abc/dummy/a
+     print
+	‘Hello World’ LastName FirstName
+     cut Hello + FirstName + LastName + Hello World and print in abc/dummy/b/cut.txt
+
+	o
+
+2) find all .txt format files from root
+
+	o
+	
+3) compress cut.txt in abc/dummy/b/ and after uncompress
+
+	o
+	
+4) zip cut.txt in abc/dummy/b/ and after unzip
+
+	o
+	
+make achieve.tar abc file on user Desktop
+ 	
+create script file using vi or nano testscript.sh on user home
+	#!/bin/sh
+	echo my name is $(whoami)
+	date
+change file permission, above 744 number refers to rwx for the user , read only for user group and global permission
+Run script  ./testscript.sh
+	
+add new user “test”,
+add new group “office”,
+modify 	a “test” user account to “office” group
+create abc.txt 	file on user home
+change owner “test” and group “office” of abc.txt
+

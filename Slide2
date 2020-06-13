@@ -1,0 +1,49 @@
+1)view contain of file abc/dummy/a/text.txt
+
+	o	cat abc/dummy/a/text.txt
+	
+2) abc/dummy/a/text.txt convert capitalize and copy to abc/dummy/b/textCapitalize.txt
+
+	o	mkdir abc/dummy/b
+	o	dd if=abc/dummy/a/text.txt of=abc/dummy/b/Capitalize.txt conv=ucase
+
+ 	
+3) word count of file abc/dummy/a/text.txt and 	abc/dummy/b/textCapitalize.txt
+
+	o	wc abc/dummy/a/text.txt
+			( print line word and character ) 
+	.	wc -w  abc/dummy/a/text.txt 
+			( print only word )
+	o	wc abc/dummy/b/Capitalize.txt
+			( print line word and character ) 
+	.	wc -w  abc/dummy/b/Capitalize.txt
+			( print only word )
+		
+	
+4) create a file using vi or nano city.txt in abc/dummy/a
+print	
+ 	Karachi
+ 	Lahore
+ 	Karachi
+ 	Quetta
+ 	kohat
+ 	Islamabad
+ 	Abbottabad
+ 	Multan 	
+in city.txt
+
+	o	nano abc/dummy/a/city.txt
+
+5) view contain of file abc/dummy/a/city.txt
+
+	o	cat abc/dummy/a/city.txt
+	
+6) view contain sort lines of file abc/dummy/a/city.txt
+
+	o	sort abc/dummy/a/city.txt
+	
+7) view contain of omit repeated line abc/dummy/a/city.txt
+
+	o	sort abc/dummy/a/city.txt | uniq
+
+	

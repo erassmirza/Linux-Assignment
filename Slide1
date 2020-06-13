@@ -1,0 +1,65 @@
+	 	 	
+Practical Linux Commands:
+
+1) print system information with kernel release, kernel version and kernel name
+
+	o 	uname		( print symtem information )
+	. 	uname -a	( print all information )
+	. 	uname -r	( print kernal release )
+	. 	uname -s	( print kernal name )
+	. 	uname -v	( print kernal version )
+	. 	uname -srv	( print combine )
+
+2) make some alias m=man, up=uptime -s and so on
+	
+	.	( command into short format )
+
+	o	alias m="man"
+	o	alias up="uptime -s"
+	
+	o	unalias m
+	o	unalias up
+	 
+ 	
+3) type  $ du  and  $ ls -al  command on user desktop
+
+	o	ls -al		( show all files/dir in listing format include hidden files )
+	o	du		( display file usage space )
+	.	du -h		( display human readable file usage space )	
+	.	du -h | less	( display human readable file usage space and user has control on it )
+			( | is grep )
+	
+4) make directories abc/xyz on user desktop
+
+	o	mkdir abc
+	o	cd abc
+	o	mkdir xyz
+ 	
+5) create file dateTime.txt in abc/xyz
+	
+	o	cd abc
+	o	cd xyz
+	o	touch dateTime.txt
+ 	
+6) print current date with calendar in dateTime.txt
+
+	o	cd abc/xyz
+	o	date > dateTime.txt
+
+7) create directories abc/dummy/a on user desktop
+
+	o	cd abc
+	o	mkdir dummy
+	o	cd dummy
+	o	mkdir a
+ 	
+8) create file using vi or nano text.txt in abc/dummy/a
+print 	
+ 	Hello World
+ 	FirstName + lastName
+ 	define in one line about info, help and man
+ 	define in one line about whatis, type, whereis and which
+in text.txt
+
+	o	cd abc/dummy/a
+	o	touch text.txt

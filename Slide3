@@ -1,0 +1,50 @@
+1) break a file into the piece of 2 lines abc/dummy/a/city.txt and after join city2.txt
+
+	o	cd abc/dummy/a/
+	o	split -l 2 city.txt
+	o	cat x* > city2.txt
+	
+2) abc/dummy/a/city.txt replace text Multan to Mohatta and save in abc/dummy/a/city3.txt
+
+	o	sed 's/Multan/Mohatta/g' abc/dummy/a/city.txt > abc/dummy/a/city3.txt
+
+3) abc/dummy/a/city.txt compare file line by line abc/dummy/a/city3.txt
+
+	o	diff -y abc/dummy/a/city.txt abc/dummy/a/city3.txt 
+	
+4) view contain line matching a “k” in abc/dummy/a/city.txt
+
+	o	cat abc/dummy/a/city.txt | grep "k"
+
+5) copy abc/xyz/dateTime.txt file in abc/dummy/b
+
+	o	cp abc/xyz/dateTime.txt abc/dummy/b/
+	
+6) copy abc from Desktop in pull directory on user Desktop
+
+	o	 cp -r abc pull
+ 	
+7) delete pull directory on user Desktop
+
+	o	rm -r pull		or		rmdir pull
+ 	
+8) rename abc/dummy/b/dateTime.txt file to dateAndTime.txt
+
+	o	mv abc/dummy/b/dateTime.txt abc/dummy/b/dateAndTime.txt
+ 	
+9) make a link from abc/dummy/b to user Desktop
+
+	o	
+ 	
+10) print and add CPU architecture information in dateAndTime.txt
+
+	o
+ 	
+11) sleep 500s scheduling priority -10 run as background process and after kill job
+
+	o
+ 	
+12) view contain of file abc/dummy/a/text.txt
+
+	o	 cat abc/dummy/a/text.txt 
+
